@@ -71,4 +71,3 @@ Explorando recursos avançados do Python, tratamento de erros e integração com
 - [ ] **Task 47:** Extrair os títulos das notícias da página principal de um site de notícias (Web Scraping simples com `BeautifulSoup`).
 - [ ] **Task 48:** Enviar um e-mail automatizado pelo Python usando a biblioteca `smtplib`.
 - [ ] **Task 49:** Interface Gráfica Simples (GUI): Fazer uma janela com um botão e um texto usando a biblioteca `tkinter`.
-- [ ] **Task 50:** Consolidar conhecimento: Criar um projeto final usando OOP, que baixe dados de uma API, salve em um banco de dados `sqlite3` e gere um relatório `.txt`.
