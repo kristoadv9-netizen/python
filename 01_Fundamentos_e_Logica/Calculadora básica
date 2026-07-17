@@ -1,0 +1,36 @@
+num1 = 0
+num2 = 0
+result = 0
+op = ''
+
+while True:
+    num1 = float(input("Digite o primeiro número: "))
+
+    op = input("Digite a operação (+, -, *, /) ou 'sair' para encerrar: ")
+
+    if op == 'sair':
+        break
+
+    num2 = float(input("Digite o segundo número: "))
+
+    if op == '+':
+        result = num1 + num2
+
+    elif op == '-':
+        result = num1 - num2
+
+    elif op == '*':
+        result = num1 * num2
+
+    elif op == '/':
+        if num2 == 0:
+            print("Erro: não é possível dividir por zero!")
+            continue
+
+        result = num1 / num2
+
+    else:
+        print("Operação inválida!")
+        continue
+
+    print('{} {} {} = {}'.format(num1, op, num2, result))
