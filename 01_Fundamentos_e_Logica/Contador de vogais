@@ -1,0 +1,10 @@
+texto = input("Digite um texto: ")
+
+vogais = "aeiou"
+contador = 0
+
+for letra in texto:
+    if letra.lower() in vogais:
+        contador += 1
+
+print(f"O número de vogais em '{texto}' é: {contador}")
