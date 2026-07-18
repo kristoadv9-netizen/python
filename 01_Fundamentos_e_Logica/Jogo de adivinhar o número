@@ -1,0 +1,103 @@
+from random import randint
+
+jogar_novamente = True
+
+while jogar_novamente:
+    Loop = True
+
+    while Loop:
+        escolha_computador = randint(1, 10)
+
+        print("""
+Estou pensando em um número entre 1 e 10. Tente adivinhar!
+""")
+
+        entrada_usuario = input("Escolha um número: ")
+
+        if not entrada_usuario.isdigit():
+            print("Entrada inválida! Digite apenas números. O jogo vai começar de novo.")
+            continue
+
+        escolha_usuario = int(entrada_usuario)
+
+        if escolha_usuario == 1:
+            if escolha_computador == 1:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+        elif escolha_usuario == 2:
+            if escolha_computador == 2:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+        elif escolha_usuario == 3:
+            if escolha_computador == 3:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+        elif escolha_usuario == 4:
+            if escolha_computador == 4:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+        elif escolha_usuario == 5:
+            if escolha_computador == 5:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+        elif escolha_usuario == 6:
+            if escolha_computador == 6:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+        elif escolha_usuario == 7:
+            if escolha_computador == 7:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+        elif escolha_usuario == 8:
+            if escolha_computador == 8:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+        elif escolha_usuario == 9:
+            if escolha_computador == 9:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+        elif escolha_usuario == 10:
+            if escolha_computador == 10:
+                print("Parabéns! Você acertou!")
+                Loop = False
+            else:
+                print("Você errou! O número correto era:", escolha_computador)
+
+
+        else:
+            print("Número inválido! Escolha um número entre 1 e 10.")
+
+    resposta = input("Deseja jogar novamente? (sim/não): ").strip().lower()
+    if resposta == "sim":
+        jogar_novamente = True
+    else:
+        jogar_novamente = False
+
+print("Obrigado por jogar!")
