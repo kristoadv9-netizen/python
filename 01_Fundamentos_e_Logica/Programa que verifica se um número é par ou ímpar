@@ -1,0 +1,19 @@
+while True:
+
+
+    numero = input("Digite um número inteiro (ou sair): ")
+    
+    if numero.lower() == "sair":
+        print("Encerrando o programa.")
+        break
+    
+    if not numero.isdigit():
+        print("Por favor, digite um número inteiro válido.")
+        continue
+
+    numero = int(numero)
+
+    if(numero % 2 == 0):
+        print(f"\nO número {numero} é par.\n")
+    else:
+        print(f"\nO número {numero} é ímpar.\n")
