@@ -1,18 +1,26 @@
+# Variáveis utilizadas no programa
 num1 = 0
 num2 = 0
 result = 0
 op = ''
 
+# Loop principal da calculadora
 while True:
+
+    # Solicita o primeiro número ao usuário
     num1 = float(input("Digite o primeiro número: "))
 
+    # Solicita a operação matemática desejada
     op = input("Digite a operação (+, -, *, /) ou 'sair' para encerrar: ")
 
+    # Encerra o programa caso o usuário digite "sair"
     if op == 'sair':
         break
 
+    # Solicita o segundo número
     num2 = float(input("Digite o segundo número: "))
 
+    # Verifica qual operação foi escolhida e realiza o cálculo
     if op == '+':
         result = num1 + num2
 
@@ -23,14 +31,19 @@ while True:
         result = num1 * num2
 
     elif op == '/':
+
+        # Impede que seja feita uma divisão por zero
         if num2 == 0:
             print("Erro: não é possível dividir por zero!")
-            continue
+            continue  # Volta para o início do loop
 
+        # Realiza a divisão caso o segundo número seja diferente de zero
         result = num1 / num2
 
     else:
+        # Exibe uma mensagem caso a operação digitada seja inválida
         print("Operação inválida!")
-        continue
+        continue  # Reinicia o loop
 
+    # Exibe o resultado da operação realizada
     print('{} {} {} = {}'.format(num1, op, num2, result))
