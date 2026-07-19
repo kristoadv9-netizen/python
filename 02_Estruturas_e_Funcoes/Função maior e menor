@@ -1,0 +1,17 @@
+def analisar_lista(lista_numeros):
+    if not lista_numeros:
+        print("A lista está vazia.") 
+        return
+    
+    print("O maior número da lista é:", max(lista_numeros))
+
+
+print('Digite os números da lista separados por espaço: ')
+
+minha_lista = list(map(int, input().split()))
+
+analisar_lista(minha_lista)
+
+if minha_lista:
+    print("O menor número da lista é:", min(minha_lista))
+
